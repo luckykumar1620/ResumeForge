@@ -44,15 +44,15 @@ const ResumePreview = ({data,template,accentColor,classes=""}) => {
             #resume-preview,#resume-preview *{
             visibility:visible;}
             #resume-preview{
-            position-absolute;
+            position:absolute;
             left:0;
             top:0;
             width:100%;
             height:auto;
             margin:0;
-            padding:0
+            padding:0;
             box-shadow:none !important;
-            border:none !important
+            border:none !important;
             }}`
           }
         </style>
