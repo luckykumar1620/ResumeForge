@@ -10,8 +10,8 @@ const Navbar = () => {
     const navigate=useNavigate()
 
     const logoutUser=()=>{
+         dispatch(logout())
          navigate('/')
-         dispatch(logout)
     }
   return (
     <div className='shadow bg-white'>
