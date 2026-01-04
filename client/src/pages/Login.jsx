@@ -12,6 +12,9 @@ import api from '../configs/api'
 
 const Login = () => {
 
+    console.log("LOGIN VERSION v2")
+
+
     // const dispatch=useDispatch()
 
     const dispatch = useDispatch()
