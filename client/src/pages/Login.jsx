@@ -52,7 +52,8 @@ const Login = () => {
 
     React.useEffect(() => {
   if (user && token) {
-    navigate('/app')
+   navigate('/app', { replace: true });
+
   }
 }, [user, token, navigate])
 
