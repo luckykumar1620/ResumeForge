@@ -92,20 +92,32 @@ resume-builder/
 │   │── controllers/
 │   │── models/
 │── README.md
+``` 
 
-⚙️ Installation & Setup
-1️⃣ Clone the repository
+## ⚙️ Installation & Setup
+### 1️⃣ Clone the repository
+```bash
 git clone https://github.com/your-username/resume-builder.git
 cd resume-builder
-2️⃣ Install dependencies
+```
+### 2️⃣ Install dependencies
+```bash
 Backend
 cd server
 npm install
 Frontend
 cd client
 npm install
+```
+## Screenshot and UI 
 
-🌱 Future Enhancements
+<img width="1920" height="1080" alt="Screenshot 2026-01-04 103409" src="https://github.com/user-attachments/assets/464fd091-be45-4d1f-8670-369f018bfe92" />
+
+<img width="1920" height="1080" alt="Screenshot 2026-01-04 094424" src="https://github.com/user-attachments/assets/96345aa2-7fcb-49c0-a5a8-41e621db24dc" />
+
+<img width="1920" height="1080" alt="Screenshot 2026-01-04 094513" src="https://github.com/user-attachments/assets/5f69ded9-431e-45ab-90ca-2f630232a16a" />
+
+## 🌱 Future Enhancements
 
 AI-powered resume suggestions
 
@@ -117,7 +129,7 @@ Cloud-based resume storage
 
 Admin dashboard
 
-🔐 Security Practices
+## 🔐 Security Practices
 
 JWT-based stateless authentication
 
@@ -132,11 +144,11 @@ Sensitive files excluded via .gitignore
 Contributions are welcome!
 Fork the repository and submit a pull request for improvements or fixes.
 
-📄 License
+## 📄 License
 
 This project is licensed under the MIT License.
 
-👨‍💻 Author
+## 👨‍💻 Author
 
 Lucky Kumar
 Full-Stack Developer 
