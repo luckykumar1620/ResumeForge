@@ -4,23 +4,31 @@ import { Link } from 'react-router-dom';
 
 const Hero = () => {
 
-    const {user}=useSelector(state=>state.auth)
-     const [menuOpen, setMenuOpen] = React.useState(false);
+    const { user } = useSelector(state => state.auth)
+    const [menuOpen, setMenuOpen] = React.useState(false);
 
     const logos = [
-        'https://saasly.prebuiltui.com/assets/companies-logo/instagram.svg',
-        'https://saasly.prebuiltui.com/assets/companies-logo/framer.svg',
-        'https://saasly.prebuiltui.com/assets/companies-logo/microsoft.svg',
-        'https://saasly.prebuiltui.com/assets/companies-logo/huawei.svg',
-        'https://saasly.prebuiltui.com/assets/companies-logo/walmart.svg',
+        // 'https://saasly.prebuiltui.com/assets/companies-logo/instagram.svg',
+        // 'https://saasly.prebuiltui.com/assets/companies-logo/framer.svg',
+        // 'https://saasly.prebuiltui.com/assets/companies-logo/microsoft.svg',
+        // 'https://saasly.prebuiltui.com/assets/companies-logo/huawei.svg',
+        // 'https://saasly.prebuiltui.com/assets/companies-logo/walmart.svg',
+
+
+        '/logos/instagram.png',
+        '/logos/framer.png',
+        '/logos/microsoft.png',
+        '/logos/walmart.png',
     ]
-  return (
-     <>
+
+
+    return (
+        <>
             <div className="min-h-screen pb-20">
                 {/* Navbar */}
                 <nav className="z-50 flex items-center justify-between w-full py-4 px-6 md:px-16 lg:px-24 xl:px-40 text-sm">
                     <a href="https://prebuiltui.com">
-                       <img src="/logo.svg" alt="logo" className='h-11 w-auto' />
+                        <img src="/logo.svg" alt="logo" className='h-11 w-auto' />
                     </a>
 
                     <div className="hidden md:flex items-center gap-8 transition duration-500 text-slate-800">
@@ -34,7 +42,7 @@ const Hero = () => {
                         <Link to='/app?state=register' href="" className="hidden md:block px-6 py-2 bg-green-500 hover:bg-green-700 active:scale-95 transition-all rounded-full text-white" hidden={user}>
                             Get started
                         </Link>
-                        <Link to='/app?state=login' href="" className="hidden md:block px-6 py-2 border active:scale-95 hover:bg-slate-50 transition-all rounded-full text-slate-700 hover:text-slate-900"hidden={user} >
+                        <Link to='/app?state=login' href="" className="hidden md:block px-6 py-2 border active:scale-95 hover:bg-slate-50 transition-all rounded-full text-slate-700 hover:text-slate-900" hidden={user} >
                             Login
                         </Link>
                         <Link to='/app' className='hidden md:block px-8 py-2 bg-green-500
@@ -96,7 +104,7 @@ const Hero = () => {
 
                     {/* CTA Buttons */}
                     <div className="flex items-center gap-4 ">
-                        <Link  to='/app' className="bg-green-500 hover:bg-green-600 text-white rounded-full px-9 h-12 m-1 ring-offset-2 ring-1 ring-green-400 flex items-center transition-colors">
+                        <Link to='/app' className="bg-green-500 hover:bg-green-600 text-white rounded-full px-9 h-12 m-1 ring-offset-2 ring-1 ring-green-400 flex items-center transition-colors">
                             Get started
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-arrow-right ml-1 size-4" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
                         </Link>
@@ -108,9 +116,21 @@ const Hero = () => {
 
                     <p className="py-6 text-slate-600 mt-14">Trusting by leading brands, including</p>
 
-                    <div className="flex flex-wrap justify-between max-sm:justify-center gap-6 max-w-3xl w-full mx-auto py-4" id="logo-container">
-                        {logos.map((logo, index) => <img key={index} src={logo} alt="logo" className="h-6 w-auto max-w-xs" />)}
+                    {/* <div className="flex flex-wrap justify-between max-sm:justify-center gap-6 max-w-3xl w-full mx-auto py-4" id="logo-container">
+                    {logos.map((logo, index) => <img key={index} src={logo} alt="logo" className="h-6 w-auto max-w-xs" />)}
+                </div> */}
+
+                    <div className="flex flex-wrap justify-center gap-10 max-w-3xl w-full mx-auto py-6">
+                        {logos.map((logo, index) => (
+                            <img
+                                key={index}
+                                src={logo}
+                                alt="logo"
+                                className="h-10 w-auto object-contain opacity-80 hover:opacity-100 transition"
+                            />
+                        ))}
                     </div>
+
                 </div>
             </div>
             <style>
@@ -123,7 +143,7 @@ const Hero = () => {
                 `}
             </style>
         </>
-  )
+    )
 }
 
 export default Hero
