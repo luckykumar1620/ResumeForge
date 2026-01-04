@@ -37,7 +37,9 @@ const App = () => {
         return;
       }
       console.log(error.message);
-    }
+    }finally {
+    dispatch(setLoading(false)) // 🔥🔥 EXACT FIX LINE
+  }
   }
 
   useEffect(() => {
