@@ -17,6 +17,8 @@ The project follows **industry-level architecture**, secure authentication, and 
 - ⚡ Fast and scalable architecture
 
 ---
+## Live URL 
+https://resumeforge-frontend-jlma.onrender.com
 
 ## 🛠️ Tech Stack
 
